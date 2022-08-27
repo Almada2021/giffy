@@ -1,0 +1,46 @@
+@keyframes rotate{
+  10%{
+    transform: rotate(36deg);
+  }
+  30%{
+    transform: rotateX(72deg);
+  }
+  50%{
+    transform: rotateY(180deg);  
+    background-color: #0dd;
+  
+  }
+  70%{
+    transform: rotate(252deg);    
+    background-color:blue;
+  }
+  100%{
+    background-color: #0ff;
+    
+  }
+}
+
+.spinner{
+  background-color: blue;
+  height: 70px;
+  width:  90px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: rotate;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+.spinner__content{
+  background-color: white;
+  height:40px;
+  width: 40px;
+  border-radius: 100%;
+}
+.spinner:hover{
+  background-color: #0ff;
+  transform: rotateZ(360deg);
+  transition: all 4s;
+}
